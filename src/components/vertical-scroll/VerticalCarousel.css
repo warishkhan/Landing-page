@@ -1,0 +1,77 @@
+.v-carousel-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .v-carousel::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .v-carousel {
+    height: 70%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .v-carousel-item {
+    scroll-snap-align: start;
+    height: 400px; /* Same height as the container */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    font-size: 24px;
+    transition: background-color 0.5s ease;
+    flex-direction: column;
+   
+  }
+
+  .v-carousel-item h2{
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-wrap: wrap;
+    margin-left: 2.5rem;
+  }
+
+  .v-number{
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    font-size: 2rem !important;
+    text-align: center;
+    padding: .2rem;
+  }
+  
+  .v-carousel-indicators {
+    position: absolute;
+    left: 1%;
+    top: 33.5%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  
+  .v-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(218, 84, 36);
+    margin: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .v-indicator.active {
+    background-color: #fff;
+  }
+  

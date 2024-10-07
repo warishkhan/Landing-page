@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.hero-section2-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+   /* border: 2px solid red; */
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 10rem;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column !important;
+   text-align: center;
+}
+
+.text-container h1{
+    font-family: "Roboto", sans-serif;
+}
+.text-container p{
+    margin-top: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.text-container div{
+    width: 75%;
+}
+
+.img-container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-control{
+    width: 65%;
+    z-index: 8;
+}
+.img-control2{
+    width: 90%;
+    position: absolute;
+   z-index: 9;
+   top: 20%;
+}
+.img-control3{
+    width: 55%;
+    position: absolute;
+   z-index: 7;
+   top: -15%;
+}
+.img-control4{
+    width: 33%;
+    position: absolute;
+   z-index: 7;
+   top: 65%;
+   left: 55%;
+}
+.img-control5{
+    width: 8%;
+    position: absolute;
+   z-index: 8;
+   top: 63%;
+   left: 78%;
+}
+.img-control6{
+    width: 8%;
+    position: absolute;
+   z-index: 8;
+   top: -15%;
+   left: 40%;
+}
+.img-control7{
+    width: 8%;
+    position: absolute;
+   z-index: 8;
+   top: -15%;
+   left: 85%;
+}
+.img-control8{
+    width: 8%;
+    position: absolute;
+   z-index: 8;
+   top: 60%;
+   left: 5%;
+}
+.img-control9{
+    width: 8%;
+    position: absolute;
+   z-index: 8;
+   top: 82%;
+   left: 5%;
+}
+.img-control10{
+    width: 20%;
+    position: absolute;
+   z-index: 8;
+   top: 0%;
+   left: 1%;
+}
+.img-control11{
+    width: 20%;
+    position: absolute;
+   z-index: 8;
+   top: 35%;
+   left: 1%;
+}
+.img-control12{
+    width: 20%;
+    position: absolute;
+   z-index: 8;
+   top: 20%;
+   left: -2%;
+}
+.img-control13{
+    width: 20%;
+    position: absolute;
+   z-index: 9;
+   top: 87%;
+   left: 20%;
+}
+.img-control14{
+    width: 20%;
+    position: absolute;
+   z-index: 9;
+   top: 75%;
+   left: 75%;
+}
+.img-control15{
+    width: 20%;
+    position: absolute;
+   z-index: 9;
+   top: 32%;
+   left: 80%;
+}
+.img-control16{
+    width: 20%;
+    position: absolute;
+   z-index: 9;
+   top: -5%;
+   left: 80%;
+}
+
+
+@media (max-width: 992px){
+    .hero-section2-main-container{
+        flex-direction: column;
+    }
+    .text-container{
+        margin-top: 8rem !important;
+    }
+    .text-container,.img-container{
+        margin-bottom: 6rem !important;
+    }
+}
+

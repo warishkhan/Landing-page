@@ -1,0 +1,274 @@
+/* Carousel container */
+.carousel-containers {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 43rem;
+}
+
+.swipper-container {
+  background: linear-gradient(to right, #ffb905, #f43f06);
+  border-radius: 1.8rem;
+  height: 27rem !important;
+  position: relative;
+}
+
+/* Carousel slides container */
+.carousel-slides {
+  display: flex; /* Align slides horizontally */
+  width: 100%;
+  transition: transform 0.5s ease-in-out; /* Smooth transition on button click */
+}
+
+/* Individual slide */
+.slides {
+  min-width: 100%; /* Each slide takes full width of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 27rem;
+}
+.img-creator-bio {
+  position: relative;
+  bottom: 2.8rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.slides .img-creator-bio img {
+  width: 78.4%;
+}
+
+.creator-bio {
+  position: absolute;
+  width: 90%;
+  height: 27%;
+  background: #ffb905;
+  bottom: 0;
+  border-radius: 5rem;
+  right: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.creator-bio h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.creator-bio p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-wrap: wrap;
+  margin-bottom: 0.1rem;
+}
+
+.insta-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insta-icon-container p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.border-bottom {
+  width: 40%;
+  height: 2%;
+  background-color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.slides .carousel-text {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  bottom: 10%;
+}
+
+.c-inner-divs {
+  width: 70%;
+  height: auto !important;
+  text-align: left;
+  margin-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.slides .carousel-text .c-inner-divs h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-wrap: wrap;
+  color: #f2f2f2;
+  padding: 0 !important;
+}
+
+.slides .carousel-text .c-inner-divs p {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  text-wrap: wrap;
+  color: #f2f2f2;
+  padding: 0 !important;
+}
+
+.slides .carousel-text .c-inner-divs button {
+  width: 40%;
+  height: 5%;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding: 0.3rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  color: #eb7a14;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.svg-container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 3rem;
+  position: absolute;
+  bottom: 8%;
+  left: 5.5%;
+  
+}
+
+.svg-icons{
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 100%;
+  background-color: #be886d;
+  cursor: pointer;
+  margin-right: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-icons img{
+  width: 70%;
+}
+
+.svg-icons.active{
+  background-color: #f2f2f2;
+}
+
+.slides .carousel-text .c-inner-divs button:hover {
+  background-color: #eb7a14;
+  color: #f2f2f2;
+}
+
+.carousel-btn-indicator-containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0.2rem;
+  margin-top: 0.4rem;
+}
+
+.c-inner-number {
+  /* background-color:#f2f2f2; */
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  cursor: pointer;
+  z-index: 10;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  font-size: 2rem !important;
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 2rem;
+}
+
+/* Left and right navigation buttons */
+.carousel-btn {
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+.carousel-btn:hover {
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid black;
+}
+
+.btn-left {
+  margin-right: 0.5rem;
+}
+
+/* Indicators at the bottom of the carousel */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.2rem;
+}
+
+/* Each individual indicator */
+.indicator {
+  width: 20px;
+  height: 11px;
+  background-color: #c2c2c2;
+  border-radius: 50%;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+/* Red color for active indicator */
+.indicator.active {
+  width: 10px;
+  height: 10px;
+  background-color: #eb7a14;
+  flex: 3;
+  border-radius: 0.5rem;
+}
+
+

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.mobileNav-main-container{
+    position: relative; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(51, 51, 51, 0.8); Background color with transparency */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+    background: linear-gradient(to right, #eb7a14, #f43f06);
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    overflow: hidden !important;
+}
+
+.sidebar{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateX(100%); /* Move the sidebar off-screen */
+    z-index: 1000;
+}
+
+.mobileNav-main-container.hidden {
+    transform: translateY(-100%); /* Hide the navbar */
+}
+
+.mobileNav-main-container.visible {
+    transform: translateY(0); /* Show the navbar */
+}
+
+.sidebar.hidden {
+   opacity: 0;
+    transform: translateX(100%);
+    display: none;
+   
+}
+
+.sidebar.visible {
+   opacity: 1;
+   transform: translateX(0%);
+   
+}
+.navbar-flex-container{ 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 80rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.bar{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.bar .middle{
+    height: 3px;
+    width: 2.4rem;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.bar .top{
+    bottom: 10px;
+    height: 3px;
+    width: 2.4rem;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.bar .bottom{
+    top: 12px;
+    height: 3px;
+    width: 2.4rem;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .bar .top{
+    transform: rotate(-45deg);
+    width: 2.5rem;
+    transform-origin: right;
+    top: -14px;
+}
+input[type="checkbox"]:checked ~ .bar .bottom{
+    transform: rotate(45deg);
+    width: 2.5rem;
+    transform-origin: right;
+    top: 14px;
+}
+input[type="checkbox"]:checked ~ .bar .middle{
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.navbar-column-container{
+    background: #f2f2f2;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    right: 0% !important;
+    transition: transform 0.5s ease; /* Smooth transition */
+    border-top-left-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    margin-top: 1rem;
+}
+
+.mobileNav-items{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+    width: 13rem;
+    margin-left: 1.5rem;
+    margin-top: .8rem;
+}
+
+.mobileNav-items li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar3_link,.navbar4_link {
+   width: auto;
+    font-size: 1.2rem;
+    padding: .7rem 1rem;
+    font-weight: 700;
+    transition: color .3s;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.mobileNav-items li a.active {
+    background-color: #ffce00;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: .7rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.navbar4_link{
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+    color: #E72C1A;
+    border: 1px solid #E72C1A;
+}
+
+.navbar4_link:hover{
+    background-color: #ffce00;
+    color: #000000;
+}
+

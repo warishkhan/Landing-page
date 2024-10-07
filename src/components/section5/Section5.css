@@ -1,0 +1,83 @@
+.section5-main-container{
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(147deg, #e69419 11.2%, #f43f06);
+    padding-top: 10rem;
+}
+
+.centered-div{
+    width: 62%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.text-div{
+    width: 50%;
+    position: relative;
+}
+
+.fixed-div{
+    width: 70%;
+    height: auto;
+    margin-left: 2.5rem;
+}
+
+.fixed-div h2{
+    font-size: 5rem;
+    line-height: 1.2rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-wrap: wrap;
+}
+
+
+.img-video-div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.bg-img{
+    width: 80%;
+    z-index: 7;
+    position: absolute;
+    top:-10%
+}
+
+.mobile-video{
+    width: 62%;
+    z-index: 999;
+    position: absolute;
+    top:-4%
+}
+
+.upper-img{
+    width: 70%;
+    z-index: 1999;
+    position: absolute;
+    top:-6%
+}
+
+
+.fixed-div h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    text-wrap: wrap;
+}
+
+.text-div p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    text-wrap: wrap;
+    color: #fff;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}

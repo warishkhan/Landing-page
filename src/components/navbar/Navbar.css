@@ -1,0 +1,118 @@
+/* src/components/navbar/Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navbar {
+    position: relative; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(51, 51, 51, 0.8); Background color with transparency */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: #0000;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+}
+
+.navbar1_logo-link {
+    max-width: 10rem;
+    padding-left: 0;
+}
+
+.navbar1_logo{
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.w-nav-brand {
+    float: left;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-flex-container{ 
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 80rem;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    
+}
+
+.navbar1_link,.navbar2_link {
+    font-size: 18px;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    transition: color .3s;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar2_link{
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    color: #E72C1A;
+}
+
+.navbar2_link:hover{
+    background-color: #ffce00;
+    color: #000000;
+}
+
+.navbar1_link:hover{
+    border-bottom: 1px solid white;
+}
+
+
+.navbar1_link.active {
+    background-color: #ffce00;
+    border-radius: 0.4rem;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%); /* Hide the navbar */
+}
+
+.navbar.visible {
+    transform: translateY(0); /* Show the navbar */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    display: flex; /* Align items horizontally */
+}
+
+li {
+    margin-right: 20px; /* Space between items */
+}
+
+a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+}

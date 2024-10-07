@@ -1,0 +1,50 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1; /* Keep content above the background video */
+}
+
+/* Background Video */
+.background-video {
+    position: fixed; /* Keep it fixed to lock it at the top */
+    top: 0; /* Align the video to the top */
+    left: 0; /* Align it to the left */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Send video to back */
+    object-fit: cover; /* Cover the section while maintaining aspect ratio */
+}
+
+/* Content Styling */
+.additional-content {
+    padding: 40px 0px;
+    background: linear-gradient(to right, #faeaea, #fce6e6);
+    height: auto !important;
+    z-index: 2; /* Ensure content is above the video */
+    position: relative;
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero-section {
+        min-height: 60vh; /* Adjust the height for tablets */
+    }
+
+    .background-video {
+        width: 100vw; /* Ensure the video takes full width */
+        height: 100vh; /* Full height for better fit */
+    }
+
+   
+}
+
+/* Add more responsive styles if needed */

@@ -1,7 +1,7 @@
 // src/pages/home/Home.js
 import { useInView } from "framer-motion";
 import "./Home.css";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Sticky from "../../components/sticky/Sticky";
 import HeroSection2 from "../../components/hero-section2/HeroSection2";
 import MarqueeSection from "../../components/marquee-section3/MarqueeSection";
@@ -9,8 +9,21 @@ import Carousel1 from "../../components/carousel1/Carousel1";
 import data from "../../assets/data.json";
 import Carousel2 from "../../components/carousel2/Carousel2";
 import Section5 from "../../components/section5/Section5";
+import MobileView from "../../components/section5-mobile-view/MobileView";
+import StackCardSection from "../../components/stackCards-section-6/StackCardSection";
 
 const Home = () => {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 992);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
   const ref = useRef(null);
   const isInView = useInView(ref, { triggerOnce: false });
 
@@ -44,7 +57,8 @@ const Home = () => {
             second={true}
           />
           <Carousel2 text={'Discover and explore endless possibilities with Wishlink'} slides={slides3}/>
-          <Section5/>
+         {isMobile? <MobileView/>: <Section5/>}
+         <StackCardSection/>
         </section>
       </div>
     </div>

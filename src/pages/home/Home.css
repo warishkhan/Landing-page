@@ -22,7 +22,7 @@
 
 /* Content Styling */
 .additional-content {
-    padding: 40px 0px;
+    padding-top: 40px;
     background: linear-gradient(to right, #faeaea, #fce6e6);
     height: auto !important;
     z-index: 2; /* Ensure content is above the video */

@@ -1,0 +1,210 @@
+.footer-main-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.footer-transparent-container {
+  width: 88%;
+  height: 50vh;
+  margin: 0 auto;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.01),
+    rgba(0, 0, 0, 0.03)
+  ); /* Gradient background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-radius: 85px 85px 0px 0px; /* Optional: for rounded corners */
+  padding: 20px; /* Optional: add some padding */
+  position: relative;
+  overflow: hidden;
+  z-index: 33;
+}
+
+.bg-blur-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Corrected the translation */
+  width: 75%;
+  z-index: -1;
+}
+
+.footer-container {
+  width: 88%;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Corrected the translation */
+  border-radius: 85px 85px 0px 0px;
+  z-index: 44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content-box{
+    width: 90%;
+    height: 80%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content-box .left{
+    width: 50%;
+    height: 80%;
+}
+.footer-content-box .right{
+    width: 50%;
+    height: 80%;
+}
+
+.footer-content-box .left img{
+    width: 55%;
+}
+
+.footer-content-box .left p{
+    opacity: .7;
+    font-family: 'Roboto',sans-serif;
+}
+
+.footer-content-box .left p:nth-child(2){
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 1.9rem;
+}
+
+.footer-content-box .left p:nth-child(3){
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+}
+
+.footer-content-box .right .right-inner-container{
+    display: flex;
+}
+
+.right-inner-container .right-inner-left-con{
+    display: flex;
+    width: 65%;
+}
+
+.right-inner-container .right-inner-left-con .company h3{
+font-size: 1.5rem;
+font-family: 'Roboto',sans-serif;
+font-weight: 500;
+}
+
+.right-inner-container .right-inner-left-con .company p{
+    font-family: 'Roboto',sans-serif;
+    margin-top: 1rem;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.right-inner-container .right-inner-left-con .company p:hover{
+    color: red;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.right-inner-container .right-inner-left-con .resouces{
+    margin-left: 7rem;
+}
+
+.right-inner-container .right-inner-left-con .resouces h3{
+    font-size: 1.5rem;
+font-family: 'Roboto',sans-serif;
+font-weight: 500;
+}
+
+.right-inner-container .right-inner-left-con .resouces p{
+    font-family: 'Roboto',sans-serif;
+    margin-top: 1rem;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.right-inner-container .right-inner-left-con .resouces p:hover{
+    color: red;
+    opacity: .7;
+    cursor: pointer;
+}
+.right-inner-container .right-inner-right-con{
+   width: 35%;
+   margin-left: 7rem !important;
+}
+
+.right-inner-container .right-inner-right-con .social-icons{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.right-inner-container .right-inner-right-con p{
+    font-family: 'Roboto',sans-serif;
+    margin-top: 1rem;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.right-inner-container .right-inner-right-con p:hover{
+    color: red;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.footer-content-box .right .right-inner-lower-con{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.footer-content-box .right .right-inner-lower-con .company h3{
+    font-size: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+}
+
+.footer-content-box .right .right-inner-lower-con .company p{
+    font-family: 'Roboto',sans-serif;
+    margin-top: 1rem;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.footer-content-box .right .right-inner-lower-con .company p:hover{
+    color: red;
+    opacity: .7;
+    cursor: pointer;
+}
+.footer-content-box .right .right-inner-lower-con .resources{
+    margin-left: 7rem;
+}
+
+.footer-content-box .right .right-inner-lower-con .resources h3{
+    font-size: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+}
+
+.footer-content-box .right .right-inner-lower-con .resources p{
+    font-family: 'Roboto',sans-serif;
+    margin-top: 1rem;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.footer-content-box .right .right-inner-lower-con .resources p:hover{
+    color: red;
+    opacity: .7;
+    cursor: pointer;
+}
+
+
+
+
+

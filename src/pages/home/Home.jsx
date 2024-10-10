@@ -11,6 +11,9 @@ import Carousel2 from "../../components/carousel2/Carousel2";
 import Section5 from "../../components/section5/Section5";
 import MobileView from "../../components/section5-mobile-view/MobileView";
 import StackCardSection from "../../components/stackCards-section-6/StackCardSection";
+import CardsSection7 from "../../components/card-section-7/CardsSection7";
+import AccordianSection from "../../components/accordian-section/AccordianSection";
+import FooterSection from "../../components/footer/FooterSection";
 
 const Home = () => {
 
@@ -59,7 +62,10 @@ const Home = () => {
           <Carousel2 text={'Discover and explore endless possibilities with Wishlink'} slides={slides3}/>
          {isMobile? <MobileView/>: <Section5/>}
          <StackCardSection/>
+         <CardsSection7/>
         </section>
+        <AccordianSection/>
+        <FooterSection/>
       </div>
     </div>
   );

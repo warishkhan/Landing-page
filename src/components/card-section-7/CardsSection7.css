@@ -1,0 +1,52 @@
+.cardsSection-main-container {
+    height: 110vh;
+    width: 100%;
+    background: linear-gradient(to right, #e69419, #f43f06);
+  }
+  
+  .cardsSection-text {
+    width: 70%;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cardsSection-text h3, .cardsSection-text p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    text-wrap: wrap;
+    color: #f2f2f2;
+  }
+
+  .cardsSection-text h3{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .cardsSection-text p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+
+  
+  .horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure no wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+    width: 100%; /* Set width for the horizontal scroll container */
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  

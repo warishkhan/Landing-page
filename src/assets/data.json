@@ -180,5 +180,59 @@
        "contentText":"Exponential Growth",
        "professions":"Fashion & Styling Creator"
     }
+  ],
+  "swipper":[
+    {
+      "id":0,
+      "name":"fashion",
+      "images":"https://cdn.prod.website-files.com/6665566fd32a68cdf8236075/66a99766d8b9223b70f5e4ca_Fashion.webp"
+    },
+    {
+      "id":1,
+      "name":"Beauty & Wellness",
+      "images":"https://cdn.prod.website-files.com/6665566fd32a68cdf8236075/66a9979fd3e41c129ae27318_Group%201116601186%20(1).webp"
+    },
+    {
+      "id":2,
+      "name":"Home Decor",
+      "images":"https://cdn.prod.website-files.com/6665566fd32a68cdf8236075/66a998722f814b1bbb29bd13_Decor%201.webp"
+    },
+    {
+      "id":3,
+      "name":"Lifestyle",
+      "images":"https://cdn.prod.website-files.com/6665566fd32a68cdf8236075/66a997d65525f17edf30a639_Lifestyle.webp"
+    },
+    {
+      "id":4,
+      "name":"Travel",
+      "images":"https://cdn.prod.website-files.com/6665566fd32a68cdf8236075/66a997fe6bbbd4dae139dfbc_Travel.webp"
+    }
+  ],
+  "accordion":[
+    {
+      "id":0,
+      "title":"How does the Wishlink Creator payout process work?",
+      "text":"Creator payout in a month will include all the commissions that get confirmed by the brand in that month and any earnings via rewards and referral program. Payments are processed on the last day of the month and will be in your bank account shortly after."
+    },
+    {
+      "id":1,
+      "title":"How does Wishlink help Creators grow?",
+      "text":"Struggling with creative block or unsure about profitable content? The Wishlink Creator Success Team guides you through content strategies to fuel your growth and maximise earnings."
+    },
+    {
+      "id":2,
+      "title":"Will Brands control my content?",
+      "text":"No deadlines or content demands. You’re the boss of your own creative journey."
+    },
+    {
+      "id":3,
+      "title":"Do Wishlink Creators receive exclusive Brand information?",
+      "text":"Yes, get early alerts on upcoming sales, topical days & more to plan your content better and enhance your revenue."
+    },
+    {
+      "id":4,
+      "title":"Can Wishlink’s brand commissions surpass my current collab earnings?",
+      "text":"Yes, Wishlink offers a stable, recurring income stream that can complement and even surpass your existing brand collaborations."
+    }
   ]
 }

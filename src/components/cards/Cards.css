@@ -1,0 +1,49 @@
+.cards-main-container{
+    flex: 1 0 300px; /* Flex-grow: 1, initial width 200px */
+    height: 480px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: flex 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px; /* Prevent shrinking below this width */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.cards-main-container:hover{
+    flex: 3 0 500px; /* Expand card on hover */
+}
+
+.swipper-image{
+    object-fit: cover;
+    object-position: 50% 10%;
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
+    height: 100%;
+}
+
+.swiper_data_wrapper {
+    z-index: 1;
+    background-color: #ffce00;
+    pointer-events: none;
+    flex-flow: column;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    position: absolute;
+    inset: auto 0% 0%;
+}
+
+.swiper_data_wrapper h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    text-wrap: wrap;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+

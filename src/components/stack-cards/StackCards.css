@@ -13,6 +13,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+   
 }
 
 .stack-right {
@@ -39,43 +40,115 @@
     padding: 35px;
     border-radius: 35mm;
     display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
+    justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); 
     transition: transform 0.5s ease-in-out; 
     overflow: hidden;
+    gap: 50px;
 }
 
 .sub{
-    width: 40%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub .sub-text h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #f2f2f2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sub .sub-text span{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #f2f2f2;
+}
+
+.sub-img{
+    width: 54%;
+    margin-bottom: 1rem;
 }
 
 .content{
-    width: 60%;
+    width: 65%;
+    padding: 1.5rem;
+}
+
+.content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f2f2f2;
 }
 
 
 .transparent-circle{
     width: 100%;
-    height: 13.6%;
+    height: 17.6%;
     transform: rotate(90deg);
-    position: relative;
-    right:12%;
+    position: absolute;
+    right:13%;
+    top: 2.8%;
 }
 
 .stack-card:nth-child(1) {
-    background: linear-gradient(to right, #ffb905, #f43f06);
+    background: linear-gradient(to right, #e69419, #f43f06);
     z-index: 4;
+   
 }
 .stack-card:nth-child(2) {
-    background: linear-gradient(to right, #ffb905, #f43f06);
+    background: linear-gradient(to right, #e69419, #f43f06);
     z-index: 3;
 }
 .stack-card:nth-child(3) {
-     background: linear-gradient(to right, #ffb905, #f43f06);
+     background: linear-gradient(to right, #e69419, #f43f06);
     z-index: 2;
+}
+
+
+@media (max-width: 992px){
+    .stack-card{
+        flex-direction: column;
+        width: 450px;
+        height: 600px;
+        border-radius: 30px;
+        top: 50%;
+    }
+
+    .transparent-circle{
+        transform: rotate(0deg);
+        right: 0;
+        top: 33%;
+        height: 6%;
+    }
+
+    .sub{
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .sub .sub-text h3{
+        margin-top: 0;
+    }
+
+    .sub-img{
+        width: 30%;
+    }
+
+    .content{
+        width: 100%;
+        padding: 0;
+    }
 }

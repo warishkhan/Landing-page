@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 7rem;
+    padding-top: 5rem;
 }
 
 .c-header-container{
@@ -28,4 +29,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media (max-width: 768px){
+    .carousel-header-text{
+        font-size: 2rem !important;
+    }
+    .carousel-main-container{
+        width: 95%;
+    }
 }

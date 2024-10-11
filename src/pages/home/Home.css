@@ -30,14 +30,14 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .hero-section {
-        min-height: 60vh; /* Adjust the height for tablets */
+        height: 38vh; /* Adjust the height for tablets */
     }
 
     .background-video {
         width: 100vw; /* Ensure the video takes full width */
-        height: 100vh; /* Full height for better fit */
+        height: 50vh; /* Full height for better fit */
     }
 
    

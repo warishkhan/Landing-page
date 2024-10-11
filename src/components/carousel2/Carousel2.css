@@ -28,3 +28,18 @@
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width: 768px){
+    .carousel-body-containers{
+        height: 140vh;
+    }
+    .c-header-container{
+        margin-bottom: 0rem;
+    }
+    .carousel-main-containers{
+        width: 90%;
+        height: 140vh;
+        overflow: hidden;
+    }
+}

@@ -16,6 +16,7 @@
   border-radius: 1.8rem;
   height: 27rem !important;
   position: relative;
+  width: 100%;
 }
 
 /* Carousel slides container */
@@ -154,7 +155,7 @@
   cursor: pointer;
 }
 
-.svg-container{
+.svg-container {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -162,26 +163,25 @@
   position: absolute;
   bottom: 8%;
   left: 5.5%;
-  
 }
 
-.svg-icons{
+.svg-icons {
   width: 3.8rem;
   height: 3.8rem;
   border-radius: 100%;
   background-color: #be886d;
   cursor: pointer;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.svg-icons img{
+.svg-icons img {
   width: 70%;
 }
 
-.svg-icons.active{
+.svg-icons.active {
   background-color: #f2f2f2;
 }
 
@@ -271,4 +271,54 @@
   border-radius: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .carousel-containers {
+    height: 100vh;
+    overflow: visible !important;
+  }
+  .swipper-container {
+    height: 100% !important;
+  }
+  .slides {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .slides .carousel-text {
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+  }
+  .c-inner-divs {
+    width: 100%;
+    height: auto !important;
+    text-align: center;
+    margin-left: 0rem;
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+  }
+  .slides .carousel-text .c-inner-divs h3{
+    font-size: 1rem;
+  }
+  .slides .carousel-text .c-inner-divs p{
+    font-size: 2rem;
+  }
+  .img-creator-bio {
+    top: 2%;
+    width: 94%;
+  }
+  .creator-bio {
+    bottom: -6%;
+    right: 5%;
+  }
 
+  .svg-container {
+    width: 90%;
+    top: -80%;
+   justify-content: center;
+  }
+
+  .carousel-btn-indicator-containers {
+    position: relative;
+    bottom: -8%;
+  }
+}

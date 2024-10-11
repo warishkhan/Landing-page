@@ -47,3 +47,23 @@
     font-weight: 500;
 }
 
+@media (max-width: 768px){
+    .cards-main-container{
+        flex: 1 0 270px; /* Flex-grow: 1, initial width 200px */
+        height: 360px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: flex 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 200px; /* Prevent shrinking below this width */
+        overflow: hidden;
+        position: relative;
+    }
+    
+    
+    .cards-main-container:hover{
+        flex: 1 0 270px; /* Flex-grow: 1, initial width 200px */
+    }
+  }

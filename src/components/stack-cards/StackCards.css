@@ -117,10 +117,10 @@
 }
 
 
-@media (max-width: 992px){
+@media (max-width: 768px){
     .stack-card{
         flex-direction: column;
-        width: 450px;
+        width: 400px;
         height: 600px;
         border-radius: 30px;
         top: 50%;
@@ -129,7 +129,7 @@
     .transparent-circle{
         transform: rotate(0deg);
         right: 0;
-        top: 33%;
+        top: 28%;
         height: 6%;
     }
 

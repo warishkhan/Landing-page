@@ -1,8 +1,9 @@
 .m-container {
   width: 100%;
-  height: 120vh;
+  height: 160vh;
   background-image: linear-gradient(147deg, #e69419 11.2%, #f43f06);
   padding-top: 4rem;
+  /* padding-bottom: 4rem !important; */
 }
 
 .m-text {
@@ -38,12 +39,12 @@
 .scrollable-div-main-con {
   position: relative;
   width: 100%;
-  height: 700px !important;
+  height: 850px !important;
   overflow: hidden;
 }
 
 .scrollable-div {
-  height: 90%;
+  height: 100%;
   overflow-y: auto;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
@@ -55,12 +56,14 @@
 
 .scrollable-div .item {
   width: 80%;
-  height: 750px;
+  height: 650px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin: 5px auto;
+  margin: 35px auto;
+  text-align: center;
+  /* background-color: #fff; */
 }
 
 .scrollable-div .item .item-count{
@@ -95,8 +98,8 @@
 }
 
 .mob-png-vid-con{
-    width: 100%;
-    height: 570px;
+    width: 90%;
+    height: 450px;
     display: flex ;
     justify-content: center;
     align-items: center;

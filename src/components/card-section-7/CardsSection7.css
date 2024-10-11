@@ -48,5 +48,11 @@
   .horizontal-scroll::-webkit-scrollbar {
     display: none; /* Hide scrollbar */
   }
+
+  @media (max-width: 768px){
+    .cardsSection-main-container{
+      height: 135vh;
+    }
+  }
   
   

@@ -59,3 +59,13 @@
 .accordion-container{
     width: 70%;
 }
+
+
+@media (max-width: 768px){
+    .accor-main-container{
+        height: 210vh;
+    }
+    .accordion-container{
+        width: 90%;
+    }
+  }
